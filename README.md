@@ -1,5 +1,6 @@
 # Whats-App-Chat-Analyzer
 
+### 1. Importing Libraries and Reading Data
 ```python
 import re        # imported for regular expression because we need it if we want to convert text file into dataframe
 import pandas as pd
@@ -301,55 +302,6 @@ print((data))
     24/10/21, 6:04 pm - Tayaba Malik Student: <Media omitted>
     24/10/21, 6:05 pm - Tayaba Malik Student: <Media omitted>
     24/10/21, 6:07 pm - Tayaba Malik Student: // Linked list operations in C++
-    #include <iostream>
-    using namespace std;
-     // Create a node struct Node 
-     struct Node {
-     int data;
-     struct Node* next;
-      };
-       void insertAtBeginning(struct Node** head_ref, int new_data) {
-        // Allocate memory to a node
-    	 struct Node* new_node = (struct Node*)malloc(sizeof(struct Node) );
-    	 // insert the data
-    	   new_node->data = new_data;
-    	    new_node->next = (head_ref);
-    	 // Move head to new node
-    	  (*head_ref) = new_node;
-    	   }
-    	 // Insert a node after a node
-    	  void insertAfter(struct Node * prev_node, int new_data) { 
-    	  if (prev_node == NULL) {
-    	  cout << "the given previous node cannot be NULL";
-    	   return;
-    	    }
-    		 struct Node* new_node = (struct Node*)malloc(sizeof(struct Node) );
-    		  new_node->data = new_data;
-    		  new_node->next = prev_node->next;
-    		 prev_node->next = new_node;
-    		  }
-    		   // Insert at the end
-    		    void insertAtEnd(struct Node** head_ref, int new_data) { 
-    			struct Node* new_node = (struct Node*)malloc(sizeof(struct Node)); 
-    			struct Node* last = head_ref; / used in step 5*/
-    			new_node->data = new_data;
-    			new_node->next = NULL;
-    			if (head_ref == NULL) {
-    			*head_ref = new_node;
-    			 return;
-    			  }
-    			   while (last->next != NULL) last = last->next;
-    			    last->next = new_node;
-    				 return;
-    				  }
-    				   // Delete a node
-    				    void deleteNode(struct Node* head_ref, int key) { 
-    					struct Node *temp = *head_ref, *prev;
-    					 if (temp != NULL && temp->data == key) {
-    					  *head_ref = temp->next;
-    					   free(temp);
-    					    return;
-    						 }
     24/10/21, 7:11 pm - ~K: Paint k ss ko word main paste kr lijiay ga
     24/10/21, 7:12 pm - Tayaba Malik Student: Teacher  w ma na save  kar liya
     24/10/21, 7:12 pm - ~K: Thk hai

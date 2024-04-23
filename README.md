@@ -42,12 +42,9 @@ print((data))
     2/9/21, 7:31 pm - Tayaba Malik Student: Ok thanku
     2/9/21, 7:32 pm - ~K: G g sure
 
-
-
+### 2. Data Formating and Cleaning 
 ```python
 
-### 2. Data Formating and Cleaning 
-# till line 14 we are doing some data preprocessing
 pattern = r'\d{1,2}/\d{1,2}/\d{2,4},?\s\d{1,2}:\d{2}\s[APMapm]{2}\s-\s'     # Created a regular expression for 1st column which is dateTime
 ```
 
@@ -56,8 +53,6 @@ pattern = r'\d{1,2}/\d{1,2}/\d{2,4},?\s\d{1,2}:\d{2}\s[APMapm]{2}\s-\s'     # Cr
 messages = re.split(pattern, data)[1:]   #extracted index 1 elements of list base on pattern
 (messages)
 ```
-
-
 
 
     ['Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Tap to learn more.\n',
@@ -168,10 +163,10 @@ df.head()
 </div>
 
 
-
+### 3. Separating users and messages
 
 ```python
-### 3. Separating users and messages
+
 # separate users and message
 users = []
 messages = []

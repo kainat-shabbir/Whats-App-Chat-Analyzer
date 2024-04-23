@@ -476,7 +476,8 @@ df[df['user'] == 'Zara CR'].shape[0]
 
 ## Main.py
 
-... python
+
+```python
 import matplotlib.pyplot as plt
 import streamlit as st
 from preprocessor import preprocess
@@ -492,8 +493,6 @@ if uploaded_file is not None:
     #st.text(data)
     df = preprocess(data)
 
-... python
-#### 3. User Selection and Analysis Setup
     user_list = df['user'].unique().tolist()
     user_list.remove("group_notification")
     user_list.sort()
@@ -603,6 +602,7 @@ if uploaded_file is not None:
             ax.pie(emoji_df[1].head(),labels=emoji_df[0].head(),autopct="%0.2f")
             st.pyplot(fig)
 
+```python
 
 ## Helper.py
 

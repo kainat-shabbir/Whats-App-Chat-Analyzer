@@ -474,7 +474,7 @@ df[df['user'] == 'Zara CR'].shape[0]
 ```
 ## Website for code was done on Pycharm across 3 files
 
-### Main.py
+## Main.py
 
 import matplotlib.pyplot as plt
 import streamlit as st
@@ -602,7 +602,7 @@ if uploaded_file is not None:
             st.pyplot(fig)
 
 
-### Helper.py
+## Helper.py
 
 import streamlit
 from urlextract import URLExtract
@@ -707,7 +707,7 @@ def activity_heatmap(selected_user,df):
 
 
 
-### preprocessor.py
+## preprocessor.py
 
 import re
 import pandas as pd
